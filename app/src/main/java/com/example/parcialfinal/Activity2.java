@@ -31,11 +31,11 @@ public class Activity2 extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_2);
 
         // Initialize views
-        editTextNombre = findViewById(R.id.txtNombre);
-        editTextPassword = findViewById(R.id.txtPassword);
-        editTextPassword2 = findViewById(R.id.txtPassword2);
-        editTextEmail = findViewById(R.id.txtCorreo);
-        boton_Registro = findViewById(R.id.txtboton);
+        editTextNombre = findViewById(R.id.txtNombre2);
+        editTextPassword = findViewById(R.id.txtId2);
+        editTextPassword2 = findViewById(R.id.txtPassword3);
+        editTextEmail = findViewById(R.id.txtCorreo2);
+        boton_Registro = findViewById(R.id.txtboton2);
 
         // Set click listener for the button
         boton_Registro.setOnClickListener(this);
@@ -59,7 +59,7 @@ public class Activity2 extends AppCompatActivity implements View.OnClickListener
 
     public void createUsuarios() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.20.5:8801/")
+                .baseUrl("http://192.168.230.76:8801/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         CrudUsuariosInterface crudUsuariosInterface = retrofit.create(CrudUsuariosInterface.class);

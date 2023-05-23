@@ -36,6 +36,8 @@ public class Activity4 extends AppCompatActivity implements View.OnClickListener
         boton_Todos.setOnClickListener(this);
 
         boton_Crear = findViewById(R.id.txtbotonC4);
+        boton_Ajustes = findViewById(R.id.txtbotonC5);
+        boton_Ajustes.setOnClickListener(this);
         boton_Crear.setOnClickListener(this);
     }
 
@@ -45,6 +47,12 @@ public class Activity4 extends AppCompatActivity implements View.OnClickListener
         if (v.equals(boton_Crear)) {
             Intent intent = new Intent(Activity4.this, Crear.class);
             startActivity(intent);
+        }else if(v.equals(boton_Ajustes)){
+            Intent intent = new Intent(Activity4.this, ActualizarDatos.class);
+            startActivity(intent);
+
+        }else{
+
         }
 
     }

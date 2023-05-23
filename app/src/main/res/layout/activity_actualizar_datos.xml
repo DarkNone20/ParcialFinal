@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/image5"
-    tools:context=".Activity2">
+    android:background="@drawable/orange"
+    tools:context=".ActualizarDatos">
 
     <Button
         android:id="@+id/txtboton2"
-        android:layout_width="180dp"
-        android:layout_height="79dp"
+        android:layout_width="199dp"
+        android:layout_height="89dp"
         android:layout_marginTop="22dp"
         android:layout_marginBottom="57dp"
         android:backgroundTint="#108816"
-        android:text="Registro"
+        android:text="Actualizar"
         android:textColorHighlight="#388E3C"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -73,12 +73,13 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Contraseña"
+        android:text="ID"
         android:textAlignment="center"
         android:textColor="#090000"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/txtPassword3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre2" />
 
@@ -99,7 +100,6 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/txtId2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -114,18 +114,18 @@
         app:layout_constraintBottom_toTopOf="@+id/txtNombre2"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:visibility="visible" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="264dp"
-        android:layout_height="88dp"
+        android:layout_width="298dp"
+        android:layout_height="91dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="25dp"
-        android:text="Registro"
+        android:text="Actualizar"
         android:textAlignment="center"
         android:textColor="#3F51B5"
         android:textSize="60sp"

@@ -12,6 +12,7 @@ import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.PATCH;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
 public interface CrudUsuariosInterface {
@@ -31,8 +32,8 @@ public interface CrudUsuariosInterface {
     @DELETE("/user/{id}")
     Call<Void> deleteUsuarioById(@Path("id") Long id);
 
-    @PATCH("/actualizar/{id}")
-    Call<Usuarios> updateUsuario(@Path("id") Long id, @Body Usuarios usuario);
+    @PUT("actualizar/{id}")
+    Call<Usuarios> updateUsuarioById(@Path("id") Long id, @Body RequestBody requestBody);
 
     @POST("login")
     Call<Usuarios> loginUsuario(@Body RequestBody user);
