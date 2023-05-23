@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sounds_array">
+        <item>alarma3</item>
+        <item>alarma4</item>
+        <item>alarma5</item>
+        <item>alarma6</item>
+        <item>gato</item>
+        <item>leon</item>
+
+    </string-array>
+
+
+
+
+</resources>
